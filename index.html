@@ -1,0 +1,46 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta charset="UTF-8">
+	<title>CodeMirror Vocabulary Checker by Tara Roys</title>
+  </head>
+  <body>
+	<section class="page-header">
+	  <h1 class="project-name">CodeMirror Spell Checker</h1>
+	  <h2 class="project-tagline">A dead-simple vocabulary checker for Ogden's Basic English.</h2>
+	</section>
+
+	<section class="main-content">
+	  <h1><a id="h1_demo1" class="anchor" href="#h1_demo1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h1>
+
+<textarea id="demo1">How do we know we are using Ogden's Basic English?  Easy: highlight every word thst isn't a part of the wordlist.  Start typing to see!
+
+</textarea>
+
+<footer class="site-footer">
+</footer>
+
+	</section>
+
+	<link rel="stylesheet" href="lib/codemirror.css">
+	
+	<script src="lib/codemirror.js"></script>
+
+	<script src="lib/overlay.js"></script>
+	
+	<link rel="stylesheet" href="dist/spell-checker.min.css">
+	
+	<script src="dist/spell-checker.min.js"></script>
+	
+	<script>
+	CodeMirror.fromTextArea(document.getElementById("demo1"), {
+		mode: "spell-checker",
+		lineNumbers: true,
+		autofocus: false,
+		lineWrapping: true
+	});
+	</script>
+  </body>
+</html>
